@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/41d5f40ef0.js" crossorigin="anonymous"></script>
+        <title> My Portfolio Site </title>
+    </head>
+    <body>
+        <!-- Header -->
+        <section class="header">
+            <nav>
+                <div class="nav">
+                    <a href="index.html"> <img src="Images/logo.jpg"> </a>
+                    <div class="nav-links" id="navLinks">
+                        <i class="fa fa-times" onclick="hideMenu()"></i>
+                        <ul>
+                            <li> <a href="index.html"> HOME </a> </li>
+                            <li> <a href="assets/about.html"> ABOUT </a> </li>
+                            <li> <a href="assets/contact.html"> CONTACT </a> </li>
+                            <li> <a href="assets/projects.html"> PROJECTS </a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <i class="fa fa-bars" class="menu-fa" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1> My Portfolio </h1>
+                <p> On this website you can know more about me </p>
+                <a href="assets/about.html" class="btn1"> Visit Me To Know My Name </a>
+            </div>
+        </section>
+        <section class="start">
+            <h2> How Did I Started Coding? </h2>
+            <p> In my life, I did my first coding when I was in class 5. I started it by Scratch. At that time I was not at all intrested in coding. In scratch I created very few projects. After that in class 6, came a website known as <a href="https://www.code.org"> Code.org </a>. It was a very good website for starting coding but I was not intrested much in coding at that time. Then in class 6 only, after term 1 exams my teacher introduced us to HTML. Then also I didn't took it much seriously and just somehow did it. <img src="Images/hcoding.jpg"> Then in class 7 came <a href="https://python.org"> Python </a>. At that time python seemed to be very difficult for me. I learnt some things in python but forgot some of them. At last in class 9 when I came to Dehradun and changed my school, then in my new school I had to choose a Club, so I choosed IT Club. In IT Club the teachers taught us HTML. And then I made my intrest in coding and now I am here. Now I like coding very much. <a class="btn1 btn2" href="assets/projects.html"> My Projects </a> </p>
+        </section>
+        <section class="footer">
+            <div class="footer-body">
+                <h4> About Me </h4>
+                <p> Here are the platforms where I am avaliable:- <br> ( Facebook, Instagram, Twitter, Google ) </p>
+                <a href="https://www.facebook.com"> <i class="fa fa-facebook"></i> </a>
+                <a href="https://www.instagram.com"> <i class="fa fa-instagram"></i> </a>
+                <a href="https://www.twitter.com"> <i class="fa fa-twitter"></i> </a>
+                <a href="https://www.google.com"> <i class="fa fa-google"></i> </a> <br>
+                <i class="fa fa-star"></i> Made By Arav <i class="fa fa-star" class="star-fa" ></i> 
+            </div>    
+        </section>
+        <!-- JavaScript For Toggle Menu -->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html> 

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="../style.css" type="text/css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/41d5f40ef0.js" crossorigin="anonymous"></script>
+        <title> About Me </title>
+    </head>
+    <body>
+        <!-- Header -->
+        <section class="pro-header">
+            <nav>
+                <div class="nav">
+                    <a href="../index.html"> <img src="../Images/logo.jpg"> </a>
+                    <div class="nav-links" id="navLinks">
+                        <i class="fa fa-times" onclick="hideMenu()"></i>
+                        <ul>
+                            <li> <a href="../index.html"> HOME </a> </li>
+                            <li> <a href="about.html"> ABOUT </a> </li>
+                            <li> <a href="contact.html"> CONTACT </a> </li>
+                            <li> <a href="projects.html"> PROJECTS </a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <i class="fa fa-bars" class="menu-fa" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1> About Me </h1> 
+            </div>
+        </section>
+                <div class="row">
+                    <div class="about-col">
+                        <h3> A Little Bit About Me </h3>
+                        <p> Hello everyone. My name is Arav Sah and I study in class 9. I live in Dehradun but I am making this website in Delhi since it's summer holidays and I had came to my Dadi's house. Today is 21st June 2022. Earlier, I have learnt Scratch, and Python and now I know a little bit of Python, a lot of HTML, CSS and a very small amount of JavaScript. </p>
+                        
+                        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente aut magni illo omnis quo deleniti. Fugit in rerum velit nihil nemo illum nobis perferendis deserunt. Aliquid commodi architecto magni id. Temporibus alias et earum expedita aliquam accusamus sed ex animi sunt nihil mollitia eligendi laudantium ut incidunt harum facilis fugit, architecto fugiat, voluptatibus blanditiis odio. Expedita labore quisquam corporis commodi! </p>
+                        
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, rem aspernatur quidem laudantium hic delectus ea voluptates id minus molestias, repudiandae a, iste voluptate incidunt. Labore doloribus obcaecati reprehenderit deserunt laboriosam tempore pariatur molestiae perferendis repellendus illo molestias voluptatibus dolorum maxime repudiandae dolore neque excepturi, officiis accusamus sapiente minima ullam, suscipit nobis? Eos quam magni in alias temporibus maiores voluptatem. </p>
+                        <p> <a class="btn1 btn2" id="pro-btn2" href="projects.html"> My Projects </a> </p>
+                    </div>
+                    <div class="about-col">
+                        <img src="../Images/aboutMe.png">
+                    </div>
+                </div>    
+        <!-- Footer -->
+        <section class="footer">
+            <div class="footer-body">
+                <h4> About Me </h4>
+                <p> Here are the platforms where I am avaliable:- <br> ( Facebook, Instagram, Twitter, Google ) </p>
+                <a href="https://www.facebook.com"> <i class="fa fa-facebook"></i> </a>
+                <a href="https://www.instagram.com"> <i class="fa fa-instagram"></i> </a>
+                <a href="https://www.twitter.com"> <i class="fa fa-twitter"></i> </a>
+                <a href="https://www.google.com"> <i class="fa fa-google"></i> </a>
+            </div>    
+        </section>
+        <!-- JavaScript For Toggle Menu -->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>

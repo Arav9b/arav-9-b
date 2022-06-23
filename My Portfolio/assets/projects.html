@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="../style.css" type="text/css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/41d5f40ef0.js" crossorigin="anonymous"></script>
+        <title> My Projects </title>
+    </head>
+    <body>
+        <!-- Header -->
+        <section class="pro-header">
+            <nav>
+                <div class="nav">
+                    <a href="../index.html"> <img src="../Images/logo.jpg"> </a>
+                    <div class="nav-links" id="navLinks">
+                        <i class="fa fa-times" onclick="hideMenu()"></i>
+                        <ul>
+                            <li> <a href="../index.html"> HOME </a> </li>
+                            <li> <a href="about.html"> ABOUT </a> </li>
+                            <li> <a href="contact.html"> CONTACT </a> </li>
+                            <li> <a href="projects.html"> PROJECTS </a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <i class="fa fa-bars" class="menu-fa" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1> My Projects </h1> 
+            </div>
+        </section>
+        <section class="pro-links-content">
+            <div class="pro-row">
+                <div class="pro-col-left">
+                    <h3> Here Are Some Projects Which I Made Some Days Ago </h3>
+                    <p> Here are some projects that I made earlier- </p>
+                    <p> <a href="aravhtml.html"> My First Ever HTML Project </a> </p> 
+                    <p> <a href="CSS.html"> My First CSS Project </a> </p> 
+                    <p> <a href="../handymart.ga/index.html"> Handy Mart ( My first Copy Website ) </a> </p> 
+                    <p> <a href="CSS 3.html"> My First CSS Sign Up Form </a> </p> 
+                    <p> <a href="Responsive 1.html"> My First Responsive Sign Up Form </a> </p> 
+                    <p> <a href="HomeQuiz.html"> My First Quiz Made By HTML </a> </p>
+                    <img src="../Images/myprojects.png"> 
+                </div>
+                <a href="contact.html" class="btn1 btn2" id="pro-btn"> Contact Me </a>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="footer-body">
+                <h4> About Me </h4>
+                <p> Here are the platforms where I am avaliable:- <br> ( Facebook, Instagram, Twitter, Google ) </p>
+                <a href="https://www.facebook.com"> <i class="fa fa-facebook"></i> </a>
+                <a href="https://www.instagram.com"> <i class="fa fa-instagram"></i> </a>
+                <a href="https://www.twitter.com"> <i class="fa fa-twitter"></i> </a>
+                <a href="https://www.google.com"> <i class="fa fa-google"></i> </a>
+            </div>    
+        </section>
+        <!-- JavaScript For Toggle Menu -->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html> 

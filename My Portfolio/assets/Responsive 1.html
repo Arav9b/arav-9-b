@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Responsive 1 </title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+            *{
+                box-sizing: border-box;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            html{
+                font-size: 62.5%;
+            }
+            body{
+                background-image: url('CSS17and18.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+            }
+            #form{
+                border: .2rem solid #3d3d3d;
+                border-radius: 1.0rem;
+                background-color: #3d3d3d;
+                padding: 3.5rem;
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50% , -50%);
+            }
+            input{
+                border: .1rem solid #ffffff;
+                border-radius: .5rem;
+                background-color: #3d3d3d;
+                padding: 1.0rem;
+                margin: 1.0rem 0rem 1.0rem 0rem;
+                font-size: 1.4rem;
+                outline: none;
+                color: #ffffff;
+            }
+            h1{
+                color: #ffffff;
+                text-align: center;
+                font-size: 3.1rem;
+                font-weight: normal;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            #btn1{
+                background-color: green;
+                padding: 1.0rem;
+                width: 18.2rem;
+                cursor: pointer;
+            }
+            #btn1:hover{
+                background-color: darkgreen;
+                transition: .3s;
+            }
+            .div0{
+                color: #ffffff;
+            }
+            ::placeholder{color: #ffffff;}
+            /* ----------------------------- */
+            /* Media Querie Starts From Here */
+            /* ----------------------------- */
+            @media (min-width: 200px) and (max-width: 786px){
+                #form{
+                    border: .2rem solid #3d3d3d;
+                    border-radius: .5rem;
+                    padding: 2.0rem;
+                    display: inline-block;
+                    position: absolute;
+                    top: 50%;
+                }
+                input{
+                    border-radius: .5rem;
+                    padding: 0.5rem;
+                    margin: 1.0rem 0rem 1.0rem 0rem;
+                    font-size: 1.0rem;
+                }
+                h1{
+                    font-size: 2.5rem;
+                }
+                #btn1{
+                    padding: 0.5rem;
+                    width: 14.4rem;
+                }
+            }    
+            @media (min-width: 145px) and (max-width: 199px){
+                #form{
+                    border: .2rem solid #3d3d3d;
+                    border-radius: .3rem;
+                    padding: 1.5rem;
+                    display: inline-block;
+                    position: absolute;
+                    top: 50%;
+                }
+                input{
+                    border-radius: .2rem;
+                    padding: 0.4rem;
+                    margin: 0.7rem 0rem 0.7rem 0rem;
+                    font-size: 0.7rem;
+                }
+                h1{
+                    font-size: 1.6rem;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                }
+                #btn1{
+                    padding: 0.4rem;
+                    width: 10.6rem;
+                }   
+            }
+            @media (min-width: 111px) and (max-width: 144px){
+                #form{
+                    border: .1rem solid #3d3d3d;
+                    border-radius: .2rem;
+                    padding: 1.3rem;
+                    display: inline-block;
+                    position: absolute;
+                    top: 50%;
+                }
+                input{
+                    border-radius: .1rem;
+                    padding: 0.3rem;
+                    margin: 0.5rem 0rem 0.5rem 0rem;
+                    font-size: 0.5rem;
+                    border: .1rem solid #ffffff;
+                }
+                h1{
+                    font-size: 1.2rem;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                }
+                #btn1{
+                    padding: 0.3rem;
+                    width: 7.8rem;
+                }
+            }
+            @media (min-width: 80px) and (max-width: 110px){
+                #form{
+                    border: .1rem solid #3d3d3d;
+                    border-radius: .1rem;
+                    padding: 1.0rem;
+                    display: inline-block;
+                    position: absolute;
+                    top: 50%;
+                }
+                input{
+                    border-radius: .1rem;
+                    padding: 0.2rem;
+                    margin: 0.3rem 0rem 0.3rem 0rem;
+                    font-size: 0.3rem;
+                    border: .1rem solid #ffffff;
+                }
+                h1{
+                    font-size: 1.0rem;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                }
+                #btn1{
+                    padding: 0.2rem;
+                    width: 5.3rem;
+                }
+            }
+            @media (max-width: 79px){
+                #form{
+                    border: .1rem solid #3d3d3d;
+                    border-radius: .1rem;
+                    padding: 0.7rem;
+                    display: inline-block;
+                    position: absolute;
+                    top: 50%;
+                }
+                input{
+                    border-radius: .1rem;
+                    padding: 0.1rem;
+                    margin: 0.2rem 0rem 0.2rem 0rem;
+                    font-size: 0.2rem;
+                    border: .1rem solid #ffffff;
+                }
+                h1{
+                    font-size: 1.0rem;
+                }
+                #btn1{
+                    padding: 0.1rem;
+                    width: 2.8rem;
+                }
+            }
+            /* ---------------------------------------- */
+            /* Media ----- Querie ----- Ends ----- Here */
+            /* ---------------------------------------- */
+        </style>
+    </head>
+    <body>
+        <div id="form">
+            <form id="form">
+                <h1> Sign Up </h1>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Username">
+                <input type="email" placeholder="E-Mail">
+                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Confirm Password">
+                <a href="">
+                    <input id="btn1" type="button" value="Sign Up">
+                </a>
+            </form>
+            <div class="div0"> Have an account? <a href="responsive2.html"> Sign In </a> </div>
+        </div>    
+    </body>
+</html> 
